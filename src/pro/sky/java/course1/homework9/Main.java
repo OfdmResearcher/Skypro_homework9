@@ -26,6 +26,8 @@ public class Main {
         library.printAllTheBooks();
 
         library.printBook("Peace and war 1");
+
+        System.out.println(library);
     }
 
 

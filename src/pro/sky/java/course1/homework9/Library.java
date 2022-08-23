@@ -1,5 +1,7 @@
 package pro.sky.java.course1.homework9;
 
+import java.util.Arrays;
+
 public class Library {
     private Book[] setOfBooks;
 
@@ -39,5 +41,15 @@ public class Library {
                 setOfBook.setYear(newYear);
             }
         }
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Book book : setOfBooks) {
+            stringBuilder.append(book.toString());
+            stringBuilder.append("\n");
+        }
+        return "Library: \n" + stringBuilder;
     }
 }
